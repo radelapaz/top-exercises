@@ -1,0 +1,108 @@
+:root {
+  --color-white: #ffffff;
+  --color-gray-100: #d0d0d0;
+  --color-gray-200: #c0c0c0;
+  --color-gray-300: #b8b8b8;
+  --color-gray-400: #a9a9a9;
+  --color-gray-500: #707070;
+}
+
+/* Navigation Bar */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body, 
+a, 
+p {
+  color: #202124;
+  text-decoration: none;
+  font-size: small;
+  font-family: arial,sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul li{
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.nav-container {
+  width: auto;
+}
+
+.right-container {
+  float: right;
+}
+
+#account-logo {
+  border-radius: 25px;
+}
+
+/*MAIN SECTION*/
+main {
+  flex: 1;
+  text-align: center;
+}
+
+.google-logo-container {
+  width: auto;
+}
+
+.google-logo-container img {
+  height: 80px;
+  width: auto;
+}
+
+/* Search bar */
+
+#search-bar {
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  height: 44px;
+  width: auto;
+  max-width: 584px;
+  margin: 0 auto; 
+  display: flex;
+}
+
+#search-bar:hover {
+  box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+}
+
+#search-bar input[type="text"] {
+  border-width: 0px;
+  border: none;
+  width: auto;
+}
+
+.button__form {
+  margin: 10px;
+}
+
+.button_form button {
+  padding: 0 16px;
+}
+
+.button__form button:hover {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
+
+.material-icons {
+  color: gray;
+}
+
+/* Google languages style*/
+section {
+  display: inline-block;
+}

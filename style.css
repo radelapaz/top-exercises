@@ -1,7 +1,7 @@
 :root {
   --color-white: #ffffff;
   --color-gray-50: #f8f9fa;
-  --color-gray-100: #ebe7e7;
+  --color-gray-100: #dadce0;
   --color-gray-200: #c0c0c0;
   --color-gray-300: #b8b8b8;
   --color-gray-400: #a9a9a9;
@@ -28,6 +28,7 @@ body {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /*Remove */
@@ -51,7 +52,8 @@ nav > ul li {
 }
 
 nav > ul {
-  padding-left: 0;
+  position: relative;
+  top: -5px;
   margin-right: 10px;
 }
 
@@ -65,7 +67,8 @@ nav > ul {
 }
 
 #adjust__icon--logo {
-  margin-top: 0;
+  position: relative;
+  top: -10px;
 }
 
 #account-logo {
@@ -156,6 +159,7 @@ button {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   background-color: var(--color-gray-50);
   border: 1px solid #c6c6c6;
+  cursor: pointer;
 }
 
 .material-icons {
@@ -191,13 +195,19 @@ footer {
 .nav__container--footer {
   display: flex;
   flex-direction: row;
-  padding-left: 10px;
+  padding-left: 15px;
+  line-height: 10px;
 }
 
 .footer__container--country {
-  border-top: 1px solid var(--color-gray-300);
-  border-bottom: 1px solid var(--color-gray-300);
+  padding-left: 15px;
+  border-top: 1px solid var(--color-gray-100);
+  border-bottom: 1px solid var(--color-gray-100);
   line-height: 40px;
+}
+
+.footer__container--country span {
+  padding: 15px;
 }
 
 .footer__container {
@@ -206,8 +216,7 @@ footer {
 }
 
 .footer__links a {
-  padding: 10px;
-  font-weight: 100;
+  padding: 15px;
   color: rgba(0,0,0,.54);
   font-weight: 100;
   font-size: 15px;
